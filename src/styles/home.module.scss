@@ -1,0 +1,123 @@
+.background{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #edeaea;
+}
+
+.header{
+  width: 100%;
+  background-color: #363434;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.foto{
+  background-image: url("../../public/Perfil.jpeg");
+  background-size: cover;
+  border-radius: 100px;
+  margin-left: 20vh;
+  margin-top: 5vh;
+  width: 20vh;
+  height: 20vh;
+  background-color: aliceblue;
+  margin-bottom: 20px;
+}
+
+.logo{
+  color: #fff;
+  margin: 10px;
+
+  h1{
+    color: #fff;
+  }
+
+}
+
+.dados{
+  display: flex;
+  flex-direction: column;
+ 
+  h1{
+    width: 310px;
+    justify-content: center;
+    align-items: center;
+    background-color: #6a6666;
+    padding: 10px;
+    font-size: 18px;
+    color:#fff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+}
+
+.rede{
+  display: flex;
+  color: #fff;
+  font-size: 30px;
+  justify-content: right;
+}
+
+.rede> *{
+  margin: 10px;
+}
+
+.banner{
+  background-color: rgba(54, 52, 52, 0.1);
+  width: 50vh;
+  height: 80vh;
+  margin: 2%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.04); /* Adiciona uma sombra */
+  border-radius: 10px; /* Arredonda as bordas */
+  position: relative; /* Para permitir sobreposição de conteúdo se necessário */
+  .foto{
+    background-image: url("../../public/Perfil.jpeg");
+    border-radius: 100px;
+    width: 90px;
+    height: 90px;
+    background-color: aliceblue;
+  }
+}
+
+@media (max-width: 620px){
+  .login{
+    width: 90%;
+  }
+}
+
+@media (max-width: 620px){
+  .container{
+    width: 100%;
+  }
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.yesButton, .noButton {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.noButton {
+  transition: transform 0.5s ease;  // Isso garante que o botão "Não" se mova suavemente.
+}

@@ -1,0 +1,22 @@
+.input{
+    margin-bottom: 1rem;
+    height: 40px;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1;
+    border-color: #FF6C00;
+    border-radius: 0.5rem;
+    background-color: #111B20;
+    opacity: 0.8;
+    color: var(--white);
+    padding: 1rem;
+    border: 1px solid  0;
+    color: aliceblue;
+    background-color: rgba(17,27,32,0.5);
+}
+
+.input::placeholder{
+    color: #FFFFFF;
+    font-size: 18px;
+}
