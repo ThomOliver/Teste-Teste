@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { useState } from 'react';
-import styles from '../styles/Home.module.scss';
+import styles from '../styles/home.module.scss';
 
 type ButtonPosition = {
   top: string | number;
@@ -25,7 +25,7 @@ export default function Home() {
   };
 
   const redirectToYouTube = () => {
-    window.location.href = "https://www.youtube.com";
+    window.location.href = "https://www.youtube.com/watch?v=Zn28zfPwjus";
   };
 
   return (
