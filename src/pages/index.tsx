@@ -2,17 +2,21 @@ import Head from 'next/head';
 import { useState } from 'react';
 import styles from '../styles/Home.module.scss';
 
+type ButtonPosition = {
+  top: string | number;
+  left: string | number;
+  position: 'static' | 'absolute' | 'relative' | 'fixed' | 'sticky' | undefined;
+};
+
 export default function Home() {
-  // Alterar a tipagem para aceitar string ou number.
-  const [buttonPosition, setButtonPosition] = useState<{ top: string | number; left: string | number; position: string }>({
+  const [buttonPosition, setButtonPosition] = useState<ButtonPosition>({
     top: 'initial',
     left: 'initial',
     position: 'static'
   });
 
   const handleMouseOver = () => {
-    // Gerar nova posição aleatória para o botão "Não"
-    const newPosition = {
+    const newPosition: ButtonPosition = {
       top: Math.random() * (window.innerHeight - 20),
       left: Math.random() * (window.innerWidth - 20),
       position: 'absolute'
@@ -21,7 +25,7 @@ export default function Home() {
   };
 
   const redirectToYouTube = () => {
-    window.location.href = "https://www.youtube.com/watch?v=Zn28zfPwjus";
+    window.location.href = "https://www.youtube.com";
   };
 
   return (
